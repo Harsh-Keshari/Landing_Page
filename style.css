@@ -1,0 +1,247 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto:wght@100&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#094282,#6d00ff 70%,#6d00ff);
+    /* background: linear-gradient(to right,#303841,#9c98a0 70%,#6c2fb7); */
+    color: #fff;
+    padding: 10px 8%;
+    position: relative;
+  }
+
+  nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 15px 8%;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+  }
+
+  nav img{
+    width: 150px;
+    height: 70px;
+  }
+  nav ul{
+    margin-left: 50px;
+    flex: 1;
+    text-align: center; 
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding:5px 15px;
+    background-color: #094282;
+    border-radius: 10%;
+    padding:20px;
+    margin: 20px;
+  }
+  nav a{
+    
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .text-box{
+    margin-top: 18%;
+    max-width: 600px;
+  } 
+
+  .text-box h1{
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .text-box p{
+    line-height: 28px;
+  }
+
+  .text-box button{
+    padding : 20px 40px;
+    background: #fff;
+    border:0;
+    outline: 0;
+    margin-top: 40px;
+    margin-right: 10px;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .text-box button:last-child{
+    background: #5957cf;
+    color: white;
+  }
+
+  .feature-img{
+    width:400px;
+    height: 625px;
+    position: absolute;
+    right: 12%;
+    top :18%; 
+    z-index:2;
+    border-top-right-radius:200px ;
+    border-top-left-radius:200px ;
+  }
+
+  .side{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:25%;
+    height:100%;
+    background: linear-gradient(#8569ff,#006786);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .side a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transform: rotate(90deg);
+  }
+
+  .side img{
+    height: 30px;
+    width: 5px;
+    margin-left: 20px;
+    transform: rotate(-90deg);
+  }
+
+  #contact{
+    padding-top: 50px;
+    background: linear-gradient(to right,#094282,#6d00ff 70%,#6d00ff);
+  }
+
+  #contact .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.contact-left {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.contact-left form input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(90, 142, 222, 0.564);
+    font-size: 16px;
+    color: black;
+}
+
+.contact-left form input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+#contact form input[type="Submit"] {
+    background-color: white;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    border-radius: 10px;
+    border: 3px solid var(--secondary-color);
+    transition: 0.5s, color 0.5s;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 8px 35px;
+}
+
+#contact form input[type="Submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 800;
+}
+h2{
+  color: white;
+}
+span{
+  color: black;
+}
+
+
+.contact-right {
+  /* margin-top: 50px; */
+  margin-left: 70px;
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+}
+
+.contact-right p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.contact-right p.bgcolor {
+  background-color: #094282;
+  border-radius: 10%;
+    margin-top: 10px;
+    display: inline-block;
+    width: fit-content;
+    padding: 3px 11px;
+}
+
+.contact-right ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contact-right ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-right ul li a {
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s transform 0.5s;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.contact-right ul li a:hover {
+    color: var(--primary-color);
+    transform: translateY(-8px);
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+}
